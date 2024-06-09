@@ -1,0 +1,34 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevent the whole page from scrolling */
+}
+
+.scroll-container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll; /* Enable scrolling within this container */
+    position: relative;
+}
+
+.info {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: lightblue;
+    border: 1px solid #ccc;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 1000;
+    font-size: 24px;
+}
+
+.spacer {
+    height: 200vh;
+    padding-top: 50vh;
+    text-align: center;
+    font-size: 24px;
+}
